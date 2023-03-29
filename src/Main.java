@@ -1,15 +1,13 @@
-import sorting.QuickSort;
-
-import java.util.Arrays;
+import searching.*;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 8, 3, 3, 1, 1, 4, 5, 6};
+        int[] numbers = {1, 1, 2, 3, 4, 5, 7, 8, 9, 30};
 
-        var sorter = new QuickSort();
+        var sorter = new ExponentialSearch();
 
-        sorter.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
+        int index = sorter.find(30, numbers);
+        System.out.println(index);
 
     }
 }
